@@ -1,52 +1,21 @@
-/* ============================================================
-   ATELIERS.JS — Données et rendu de la page ateliers
-   ✏️ Modifie le tableau ATELIERS pour ajouter/modifier tes ateliers
-   ============================================================ */
-
 const ATELIERS = [
   {
     id: 1,
     titre: "Nom de l'atelier 1",
-    /* ✏️ Remplace par le vrai titre */
     description: "Décris ici l'atelier : objectif, méthode, résultat obtenu. Quelques phrases suffisent pour donner envie d'en savoir plus.",
-    /* ✏️ Ta description */
-    date: "Octobre 2024",
-    /* ✏️ La date de réalisation */
-    categorie: "Catégorie",
-    /* ✏️ Ex: Marketing, Communication, Design, Informatique... */
-    emoji: "🎯",
-    /* ✏️ Emoji représentant l'atelier */
-    image: "",
-    /* ✏️ Chemin vers une image : "../assets/atelier1.jpg" — laisser vide pour l'emoji */
     fichier: "",
     /* ✏️ Chemin vers un fichier PDF ou document : "../assets/atelier1.pdf" */
   },
   {
     id: 2,
-    titre: "Nom de l'atelier 2",
+    titre: "Atelier Professionel Pour M2L",
     description: "Décris ici le second atelier : contexte, compétences mobilisées, livrables produits.",
-    date: "Novembre 2024",
-    categorie: "Catégorie",
-    emoji: "📊",
-    image: "",
-    fichier: "",
-  },
-  {
-    id: 3,
-    titre: "Nom de l'atelier 3",
-    description: "Description du troisième atelier. Tu peux mentionner les outils utilisés, la durée, les apprentissages clés.",
-    date: "Janvier 2025",
-    categorie: "Catégorie",
-    emoji: "🖥️",
     image: "",
     fichier: "",
   },
   /* ✏️ Ajoute autant de blocs { } que tu as d'ateliers */
 ];
 
-/* ============================================================
-   RENDU — Ne modifie pas cette section sauf si tu sais ce que tu fais
-   ============================================================ */
 function renderAteliers() {
   const grid = document.getElementById('ateliersGrid');
   if (!grid) return;

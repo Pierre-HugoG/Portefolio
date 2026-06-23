@@ -6,28 +6,26 @@
 const STAGES = [
   {
     id: 1,
-    entreprise: "Nom de l'entreprise",
+    entreprise: "La Socamaine",
     /* ✏️ */
-    poste: "Intitulé du poste / stage",
+    dateDebut: "18 Mai 2026",
     /* ✏️ */
-    dateDebut: "Janvier 2025",
+    dateFin: "19 Juin 2026",
     /* ✏️ */
-    dateFin: "Mars 2025",
+    duree: "5 Semaines",
     /* ✏️ */
-    duree: "3 mois",
-    /* ✏️ */
-    lieu: "Ville, Pays",
+    lieu: "Champagne",
     /* ✏️ */
     emoji: "🏢",
     /* ✏️ Logo ou emoji de l'entreprise */
-    logo: "",
+    logo: "assets/Socamaine.jpg",
     /* ✏️ Chemin vers le logo : "../assets/logo-entreprise.png" — laisser vide pour l'emoji */
     description: "Décris ici le contexte de ton stage : secteur d'activité de l'entreprise, taille, tes missions globales.",
     /* ✏️ */
     missions: [
-      "Mission principale 1 — ex: Participation à la création de contenus pour les réseaux sociaux",
-      "Mission 2 — ex: Rédaction de rapports hebdomadaires",
-      "Mission 3 — ex: Support à l'équipe marketing lors des campagnes",
+      "Mission 1 - Gestion de l'infrastructure reseau",
+      "Mission 2 — devellopement d'Appscript sur les extensions Google Sheet",
+      "Mission 3 — Deployement de service informatique",
       /* ✏️ Ajoute tes vraies missions */
     ],
     compteRendu: `Ici, tu peux écrire ton compte rendu de stage complet.

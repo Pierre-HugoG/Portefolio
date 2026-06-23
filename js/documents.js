@@ -5,9 +5,9 @@
 
 /* --- Tes infos LinkedIn --- */
 const LINKEDIN = {
-  nom: "Prénom NOM",            /* ✏️ Ton nom complet */
-  titre: "Étudiant(e) en [Formation] @ [École]", /* ✏️ Ton titre LinkedIn */
-  url: "https://linkedin.com/in/TON-PROFIL",       /* ✏️ Ton URL LinkedIn */
+  nom: "Pierre-Hugo Gondard",            /* ✏️ Ton nom complet */
+  titre: "Étudiant en BTS SIO au Lycee Andre Malraux", /* ✏️ Ton titre LinkedIn */
+  url: "www.linkedin.com/in/pierre-hugo-gondard-a3350136a",       /* ✏️ Ton URL LinkedIn */
 };
 
 /* --- Tes documents --- */
@@ -15,7 +15,6 @@ const DOCUMENTS = [
   {
     id: "cv",
     titre: "Mon CV",
-    description: "Curriculum vitæ complet : formation, expériences, compétences et centres d'intérêt.",
     emoji: "📄",
     type: "pdf",          /* pdf | link | file */
     fichier: "../assets/cv.pdf",   /* ✏️ Chemin vers ton CV en PDF */
