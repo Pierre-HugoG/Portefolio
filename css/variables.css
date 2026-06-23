@@ -1,0 +1,89 @@
+/* ============================================================
+   VARIABLES.CSS — Système de design tokens
+   ✏️ Modifie ici pour changer l'identité visuelle du portfolio
+   ============================================================ */
+
+:root {
+
+  /* --- Couleurs principales --- */
+  --color-bg:           #08090d;       /* Fond principal (presque noir) */
+  --color-bg-card:      #0f1117;       /* Fond des cartes */
+  --color-bg-elevated:  #161820;       /* Fond élevé (navbar, modals) */
+
+  --color-accent:       #7c6af7;       /* Violet électrique — couleur signature */
+  --color-accent-2:     #f7726a;       /* Corail / rose chaud — couleur secondaire */
+  --color-accent-3:     #54e5c4;       /* Mint/turquoise — 3e accent */
+
+  --color-text:         #eef0f8;       /* Texte principal */
+  --color-text-muted:   #7b7e96;       /* Texte secondaire */
+  --color-text-subtle:  #3e4158;       /* Texte très discret */
+
+  --color-border:       rgba(124, 106, 247, 0.15);   /* Bordures */
+  --color-border-hover: rgba(124, 106, 247, 0.4);    /* Bordures au survol */
+
+  /* --- Gradients --- */
+  --gradient-hero:   linear-gradient(135deg, #7c6af7 0%, #f7726a 100%);
+  --gradient-card:   linear-gradient(145deg, rgba(124,106,247,0.08) 0%, rgba(247,114,106,0.04) 100%);
+  --gradient-text:   linear-gradient(90deg, #7c6af7, #f7726a);
+  --gradient-glow:   radial-gradient(ellipse at center, rgba(124,106,247,0.3) 0%, transparent 70%);
+
+  /* --- Typographie --- */
+  --font-display:  'DM Serif Display', Georgia, serif;
+  --font-body:     'Space Grotesk', system-ui, sans-serif;
+
+  --text-xs:    0.75rem;    /* 12px */
+  --text-sm:    0.875rem;   /* 14px */
+  --text-base:  1rem;       /* 16px */
+  --text-lg:    1.125rem;   /* 18px */
+  --text-xl:    1.25rem;    /* 20px */
+  --text-2xl:   1.5rem;     /* 24px */
+  --text-3xl:   1.875rem;   /* 30px */
+  --text-4xl:   2.25rem;    /* 36px */
+  --text-5xl:   3rem;       /* 48px */
+  --text-6xl:   3.75rem;    /* 60px */
+  --text-7xl:   4.5rem;     /* 72px */
+
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semi:    600;
+  --weight-bold:    700;
+
+  /* --- Espacements --- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* --- Rayons de bordure --- */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-full: 9999px;
+
+  /* --- Ombres --- */
+  --shadow-sm:   0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md:   0 8px 24px rgba(0,0,0,0.4);
+  --shadow-lg:   0 20px 60px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 40px rgba(124,106,247,0.25);
+
+  /* --- Transitions --- */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 600ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* --- Layout --- */
+  --container-max:  1200px;
+  --nav-height:     72px;
+}

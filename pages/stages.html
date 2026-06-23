@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Stages — Portfolio</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="../index.html"><span class="logo-initials">PHG</span></a><!-- ✏️ -->
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+      <li><a href="ateliers.html" class="nav-link">Ateliers Professionnels</a></li>
+      <li><a href="stages.html" class="nav-link active">Stages</a></li>
+      <li><a href="documents.html" class="nav-link">Documents</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ======= EN-TÊTE PAGE ======= -->
+  <header class="page-hero">
+    <div class="container">
+      <a href="../index.html" class="back-link">← Retour à l'accueil</a>
+      <div class="section-header" style="margin-bottom:0">
+        <span class="section-tag">Expériences professionnelles</span>
+        <h1 class="section-title">Mes Stages</h1>
+        <p style="color:var(--color-text-muted);margin-top:1rem;max-width:580px">
+          <!-- ✏️ -->
+          Retours d'expériences détaillés de mes stages en entreprise, avec les missions réalisées et mes comptes rendus.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= LISTE STAGES ======= -->
+  <main class="section">
+    <div class="container">
+      <div class="stages-list" id="stagesList">
+        <div style="color:var(--color-text-muted);text-align:center;padding:4rem 0">Chargement...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-name">Pierre-Hugo Gondard</span><!-- ✏️ -->
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/[TON-PROFIL]" target="_blank" class="footer-link">LinkedIn</a>
+          <a href="mailto:gondardpierrehugo@gmail.com" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 — Portfolio Pierre-Hugo Gondard</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/stages.js"></script>
+</body>
+</html>

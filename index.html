@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Pierre-Hugo Gondard</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-initials">PHG</span><!-- ✏️ Remplace par tes initiales -->
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">À propos</a></li>
+      <li><a href="pages/ateliers.html" class="nav-link">Ateliers</a></li>
+      <li><a href="pages/stages.html" class="nav-link">Stages</a></li>
+      <li><a href="pages/documents.html" class="nav-link">Documents</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Bienvenue sur mon portfolio</p>
+      <h1 class="hero-title reveal delay-1">
+        <span class="title-line">Pierre-Hugo</span>
+        <span class="title-line accent-italic">Gondard</span>
+        <!-- ✏️ Remplace par ton prénom et nom -->
+      </h1>
+      <p class="hero-subtitle reveal delay-2">
+        <!-- ✏️ Ton titre / domaine / formation -->
+        Étudiant(e) en <strong>BTS SIO</strong> — passionné par le developpement web
+      </p>
+      <div class="hero-cta reveal delay-3">
+        <a href="#about" class="btn btn-primary">Découvrir mon parcours</a>
+        <a href="pages/documents.html" class="btn btn-ghost">Voir mon CV</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== À PROPOS ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Qui suis-je ?</span>
+        <h2 class="section-title">À propos de moi</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <!-- ✏️ Remplace src par le chemin de ta photo -->
+            <img src="assets/photo.jpg" alt="Photo de profil" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo')" />
+            <div class="photo-placeholder">
+              <span>Ta Photo</span>
+            </div>
+          </div>
+          <div class="photo-badge">Disponible</div>
+        </div>
+        <div class="about-content reveal delay-1">
+          <p class="about-intro">
+            <!-- ✏️ Ta présentation personnelle -->
+            Bonjour ! Je m'appelle <strong>Pierre-Hugo Gondard</strong>, étudiant en BTS SIO au Lycee Andre Malraux.
+            Passionné par le sport, les animes, l'informatique, je développe mes compétences à travers des projets concrets et des expériences professionnelles enrichissantes.
+          </p>
+          <p class="about-text">
+            <!-- ✏️ Suite de ta présentation -->
+            Je m’appelle Pierre-Hugo Gondard, j’ai 18 ans et je suis actuellement étudiant en BTS SIO (Service informatique aux organisations), option SLAM (Solutions Logicielles et Applications Métiers). Je suis spécialisé dans le développement web et j’aime créer des applications et sites internet tout en développant mes compétences en programmation et en informatique.
+          </p>
+          <div class="about-skills">
+            <h3 class="skills-title">Mes compétences clés</h3>
+            <div class="skills-grid">
+              <!-- ✏️ Modifie les compétences selon ton profil -->
+              <div class="skill-chip">Compétence 1</div>
+              <div class="skill-chip">Compétence 2</div>
+              <div class="skill-chip">Compétence 3</div>
+              <div class="skill-chip">Compétence 4</div>
+              <div class="skill-chip">Compétence 5</div>
+              <div class="skill-chip">Compétence 6</div>
+            </div>
+          </div>
+          <div class="about-info-grid">
+            <!-- ✏️ Tes infos personnelles -->
+            <div class="info-item">
+              <span class="info-label">Formation</span>
+              <span class="info-value">[Ta Formation]</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">École</span>
+              <span class="info-value">[Ton École]</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Localisation</span>
+              <span class="info-value">[Ta Ville]</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Disponible pour</span>
+              <span class="info-value">Stage / Alternance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== APERÇU SECTIONS ===================== -->
+  <section class="section cards-overview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Explorer</span>
+        <h2 class="section-title">Mon parcours</h2>
+      </div>
+      <div class="overview-cards">
+
+        <a href="pages/ateliers.html" class="overview-card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Ateliers Professionnels</h3>
+          <p class="card-desc">Découvrez les projets et ateliers que j'ai réalisés au cours de ma formation.</p>
+          <span class="card-link">Voir les ateliers →</span>
+        </a>
+
+        <a href="pages/stages.html" class="overview-card reveal delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Mes Stages</h3>
+          <p class="card-desc">Retours d'expériences et comptes rendus de mes stages en entreprise.</p>
+          <span class="card-link">Voir les stages →</span>
+        </a>
+
+        <a href="pages/documents.html" class="overview-card reveal delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Documents</h3>
+          <p class="card-desc">CV, LinkedIn et tous mes documents professionnels en accès direct.</p>
+          <span class="card-link">Voir les documents →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-name">[Prénom Nom]</span><!-- ✏️ -->
+        <div class="footer-links">
+          <!-- ✏️ Remplace # par tes vrais liens -->
+          <a href="https://linkedin.com/in/[TON-PROFIL]" target="_blank" class="footer-link">LinkedIn</a>
+          <a href="mailto:[TON-EMAIL]" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 — Portfolio personnel</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

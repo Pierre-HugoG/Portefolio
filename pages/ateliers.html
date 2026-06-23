@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliers Professionnels — Portfolio</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="../index.html"><span class="logo-initials">PHG</span></a><!-- ✏️ -->
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+      <li><a href="ateliers.html" class="nav-link active">Ateliers</a></li>
+      <li><a href="stages.html" class="nav-link">Mes Stages</a></li>
+      <li><a href="documents.html" class="nav-link">Documents</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ======= EN-TÊTE PAGE ======= -->
+  <header class="page-hero">
+    <div class="container">
+      <a href="../index.html" class="back-link">
+        ← Retour à l'accueil
+      </a>
+      <div class="section-header" style="margin-bottom:0">
+        <span class="section-tag">Formations & Projets</span>
+        <h1 class="section-title">Ateliers Professionnels</h1>
+        <p style="color:var(--color-text-muted);margin-top:1rem;max-width:580px">
+          <!-- ✏️ Texte d'intro -->
+          Retrouvez ici l'ensemble des ateliers Professionnels et projets réalisés durant ma formation. Chaque atelier illustre une compétence mise en pratique.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= GRILLE ATELIERS ======= -->
+  <main class="section">
+    <div class="container">
+      <div class="ateliers-grid" id="ateliersGrid">
+        <!-- Chargé par ateliers.js -->
+        <div style="color:var(--color-text-muted);text-align:center;padding:4rem 0;grid-column:1/-1">Chargement...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-name">Pierre-Hugo Gondard</span><!-- ✏️ -->
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/[TON-PROFIL]" target="_blank" class="footer-link">LinkedIn</a>
+          <a href="mailto:[TON-EMAIL]" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 — Portfolio Pierre-Hugo Gondard</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/ateliers.js"></script>
+</body>
+</html>
