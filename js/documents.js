@@ -19,7 +19,7 @@ const DOCUMENTS = [
     type: "pdf",          
     fichier: "../cv.pdf",   
     actions: [
-      { label: "⬇ Télécharger le CV", url: "../cv.pdf", download: true },  
+      { label: "⬇ Télécharger le CV", url: "../CV-portefolio.pdf", download: true },  
     ],
   },
   {
