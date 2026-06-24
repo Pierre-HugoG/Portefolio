@@ -1,13 +1,12 @@
 /* ============================================================
    DOCUMENTS.JS — Données de la page documents
-   ✏️ Modifie les sections ci-dessous avec tes vrais liens et fichiers
    ============================================================ */
 
 /* --- Tes infos LinkedIn --- */
 const LINKEDIN = {
-  nom: "Pierre-Hugo Gondard",            /* ✏️ Ton nom complet */
-  titre: "Étudiant en BTS SIO au Lycee Andre Malraux", /* ✏️ Ton titre LinkedIn */
-  url: "www.linkedin.com/in/pierre-hugo-gondard-a3350136a",       /* ✏️ Ton URL LinkedIn */
+  nom: "Pierre-Hugo Gondard",            
+  titre: "Étudiant en BTS SIO au Lycee Andre Malraux", 
+  url: "https://www.linkedin.com/in/pierre-hugo-gondard-a3350136a",       
 };
 
 /* --- Tes documents --- */
@@ -15,23 +14,24 @@ const DOCUMENTS = [
   {
     id: "cv",
     titre: "Mon CV",
+    description: "Mon Curriculum Vitae à jour pour mes recherches de stage et d'alternance.",
     emoji: "📄",
-    type: "pdf",          /* pdf | link | file */
-    fichier: "../assets/cv.pdf",   /* ✏️ Chemin vers ton CV en PDF */
+    type: "pdf",          
+    fichier: "../cv.pdf",   
     actions: [
-      { label: "⬇ Télécharger", url: "../assets/cv.pdf", download: true },
-      { label: "👁 Voir",        url: "../assets/cv.pdf", download: false },
+      { label: "⬇ Télécharger", url: "../cv.pdf", download: true },
+      { label: "👁 Voir",        url: "../cv.pdf", download: false },
     ],
   },
   {
     id: "linkedin",
     titre: "Profil LinkedIn",
-    description: "Mon profil professionnel en ligne avec recommandations et réseau.",
+    description: "Mon profil professionnel en ligne avec mon réseau et mes compétences.",
     emoji: "💼",
     type: "link",
-    fichier: "https://linkedin.com/in/TON-PROFIL", /* ✏️ */
+    fichier: "https://www.linkedin.com/in/pierre-hugo-gondard-a3350136a", 
     actions: [
-      { label: "Voir le profil", url: "https://linkedin.com/in/TON-PROFIL", download: false },
+      { label: "Voir le profil", url: "https://www.linkedin.com/in/pierre-hugo-gondard-a3350136a", download: false },
     ],
   },
   {
@@ -40,29 +40,15 @@ const DOCUMENTS = [
     description: "Modèle de lettre de motivation adaptable selon le poste visé.",
     emoji: "✉️",
     type: "pdf",
-    fichier: "../assets/lettre-motivation.pdf", /* ✏️ */
+    fichier: "../assets/lettre-motivation.pdf", 
     actions: [
       { label: "⬇ Télécharger", url: "../assets/lettre-motivation.pdf", download: true },
     ],
-  },
-  /* ✏️ Ajoute d'autres documents ici */
-  /*
-  {
-    id: "autre",
-    titre: "Autre document",
-    description: "Description...",
-    emoji: "📁",
-    type: "file",
-    fichier: "../assets/autre.pdf",
-    actions: [
-      { label: "⬇ Télécharger", url: "../assets/autre.pdf", download: true },
-    ],
-  },
-  */
+  }
 ];
 
 /* ============================================================
-   RENDU
+   RENDU (Ne pas modifier cette partie)
    ============================================================ */
 function renderLinkedIn() {
   const card = document.getElementById('linkedinCard');
@@ -81,7 +67,7 @@ function renderDocuments() {
       <div class="doc-icon ${d.type}">${d.emoji}</div>
       <div>
         <h3 class="doc-title">${d.titre}</h3>
-        <p class="doc-desc">${d.description}</p>
+        <p class="doc-desc">${d.description || ''}</p>
       </div>
       <div class="doc-actions">
         ${d.actions.map(a => `

@@ -18,7 +18,7 @@ const STAGES = [
     /* ✏️ */
     emoji: "🏢",
     /* ✏️ Logo ou emoji de l'entreprise */
-    logo: "assets/Socamaine.jpg",
+    logo: "../Socamaine.jpg",
     /* ✏️ Chemin vers le logo : "../assets/logo-entreprise.png" — laisser vide pour l'emoji */
     description: "Décris ici le contexte de ton stage : secteur d'activité de l'entreprise, taille, tes missions globales.",
     /* ✏️ */
