@@ -19,8 +19,7 @@ const DOCUMENTS = [
     type: "pdf",          
     fichier: "../cv.pdf",   
     actions: [
-      { label: "⬇ Télécharger", url: "../cv.pdf", download: true },
-      { label: "👁 Voir",        url: "../cv.pdf", download: false },
+      { label: "⬇ Télécharger le CV", url: "../cv.pdf", download: true },  
     ],
   },
   {
@@ -35,14 +34,14 @@ const DOCUMENTS = [
     ],
   },
   {
-    id: "lettre",
-    titre: "Lettre de motivation",
-    description: "Modèle de lettre de motivation adaptable selon le poste visé.",
-    emoji: "✉️",
-    type: "pdf",
-    fichier: "../assets/lettre-motivation.pdf", 
+    id: "synthese",
+    titre: "Tableau de synthèse",
+    description: "Mon tableau de synthèse récapitulant les compétences validées au cours de mon parcours.",
+    emoji: "📊",
+    type: "pdf", 
+    fichier: "../synthese.xlsx", 
     actions: [
-      { label: "⬇ Télécharger", url: "../assets/lettre-motivation.pdf", download: true },
+      { label: "⬇ Télécharger la synthèse", url: "../synthese.pdf", download: true },
     ],
   }
 ];
