@@ -38,20 +38,18 @@ Tu peux organiser ce texte en plusieurs paragraphes pour le rendre lisible. Les 
     /* ✏️ Ton compte rendu complet */
     fichierCR: "",
     /* ✏️ Si tu as un PDF de compte rendu : "../assets/cr-stage1.pdf" */
-    competences: ["Compétence A", "Compétence B", "Outil utilisé"],
-    /* ✏️ */
   },
   {
     id: 2,
-    entreprise: "Nom de l'entreprise 2",
-    poste: "Intitulé du poste / stage 2",
-    dateDebut: "Juin 2025",
-    dateFin: "Août 2025",
-    duree: "3 mois",
-    lieu: "Ville, Pays",
+    entreprise: "",
+    poste: "",
+    dateDebut: "",
+    dateFin: "",
+    duree: "",
+    lieu: "",
     emoji: "🏭",
     logo: "",
-    description: "Décris ici le contexte du second stage.",
+    description: "",
     missions: [
       "Mission A",
       "Mission B",
@@ -61,14 +59,12 @@ Tu peux organiser ce texte en plusieurs paragraphes pour le rendre lisible. Les 
 
 [Remplace par ton vrai contenu]`,
     fichierCR: "",
-    competences: ["Compétence X", "Compétence Y"],
+    competences: ["", ""],
   },
   /* ✏️ Ajoute autant de blocs que tu as de stages */
 ];
 
-/* ============================================================
-   RENDU
-   ============================================================ */
+
 function renderStages() {
   const list = document.getElementById('stagesList');
   if (!list) return;
