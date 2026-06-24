@@ -41,7 +41,7 @@ const DOCUMENTS = [
     type: "pdf", 
     fichier: "../synthese.xlsx", 
     actions: [
-      { label: "⬇ Télécharger la synthèse", url: "../synthese.pdf", download: true },
+      { label: "⬇ Télécharger la synthèse", url: "../Tab-de-Competence.pdf", download: true },
     ],
   }
 ];
